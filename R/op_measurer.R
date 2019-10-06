@@ -20,7 +20,9 @@ op_measurer <- function(files,
     if (is.null(app_path)) {
         # Endereço da aplicação shiny na raíz do pacote/projeto.
         app_path <- "ShinyApps/OPMeasurer"
-        appDir <- system.file(app_path, package = "ClickMetrics")
+        # appDir <- system.file(app_path, package = "ClickMetrics")
+        appDir <- "/home/vriffel/ClickMetrics/inst/ShinyApps/OPMeasurer"
+        ## Necessario apagar depois o appDir acima.
         # Verifica existência do diretório.
         if (!dir.exists(appDir)) {
             stop(paste(
